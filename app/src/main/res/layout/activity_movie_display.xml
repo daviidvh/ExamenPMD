@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDisplayActivity">
+
+    <Button
+        android:id="@+id/btninicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:text="Incio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
+        android:text="¿Quieres Borrar alguna?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lanzamiento" />
+
+    <EditText
+        android:id="@+id/edtBorrar"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="88dp"
+        android:hint="Titulo"
+        app:layout_constraintBottom_toTopOf="@+id/btninicio"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtVLanzamiento"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <ImageButton
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edtBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtVLanzamiento"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="106dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="32dp"
+        android:text="Duracion"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <TextView
+        android:id="@+id/Lanzamiento"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Lanzamiento"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="56dp"
+        android:text="Titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="106dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:text="Nombre Director"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <TextView
+        android:id="@+id/txtVTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="212dp" />
+
+    <TextView
+        android:id="@+id/txtVDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTitulo"
+        tools:layout_editor_absoluteX="212dp" />
+
+    <TextView
+        android:id="@+id/txtVDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtVDuracion" />
+
+    <TextView
+        android:id="@+id/txtVLanzamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Lanzamiento"
+        app:layout_constraintTop_toBottomOf="@+id/txtVDireccion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
